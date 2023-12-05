@@ -6,11 +6,16 @@
     <title>Login</title>
 </head>
 <body>
+    <center>
     <form action="/login" method="post">
-        <h1>contact now</h1>
-        <input type="text" name="name" placeholder="name">
-        <input type="text" name="email" placeholder="email">
+        <h1>Login</h1>
+        <input type="email" name="email" placeholder="email">
+        <br>
+        <input type="password" name="password" placeholder="password">
+        <br>
         <button type="submit">Login</button>
     </form>
+    <h3><%=locals.message%></h3>
+    </center>
 </body>
 </html>
